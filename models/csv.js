@@ -2,7 +2,10 @@
 const mongoose = require('mongoose');
 
 const fileSchema = new mongoose.Schema({
-    filename: {
+    fileName: {
+        type: String
+    },
+    filePath: {
         type: String
     },
     file: {
